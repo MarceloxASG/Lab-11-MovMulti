@@ -60,7 +60,6 @@ class MyApp extends StatelessWidget {
       description: 'Ese disco negro es muy pegriloso',
       imagePath: 'images/hockey.jpg',
     ),
-    // Añade más CardData aquí según sea necesario
   ];
 
   @override
@@ -80,7 +79,7 @@ class MyApp extends StatelessWidget {
                   title: cardDataList[index].title,
                   description: cardDataList[index].description,
                   imagePath: cardDataList[index].imagePath,
-                  backgroundColor: defaultBackgroundColor, // Usar el color de fondo predeterminado
+                  backgroundColor: defaultBackgroundColor,
                 ),
                 SizedBox(height: 16),
               ],
@@ -122,7 +121,7 @@ class CardWidget extends StatelessWidget {
           children: <Widget>[
             AspectRatio(
               aspectRatio: 16 / 9, // Con esto se podra visualizar las imagenes a medida que se agrande la pantalla
-              child: Image.asset( //  
+              child: Image.asset( 
                 imagePath,
                 fit: BoxFit.cover,
                 width: double.infinity,
